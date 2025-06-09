@@ -153,7 +153,7 @@ function ContactPage() {
         <p>📧 Email: info@creativestudio.fake</p>
         <div style={{ marginTop: '2rem' }}>
           <img
-            src="./assets/map.png"
+            src="./src/assets/map.png"
             alt="Map"
             style={{ width: '100%', maxWidth: '600px', borderRadius: '10px' }}
           />
