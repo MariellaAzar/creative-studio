@@ -1,38 +1,269 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #00BFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  background-color: #87E8FF;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1 {
+  font-size: 2.5rem;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.book-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FFD700;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.booking-form {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.booking-form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.booking-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #ffc400;
+}
+.confirmation-page {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 3rem;
+  min-height: 80vh;
+  background-color: #e6f7ff;
+}
+
+.confirmation-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmation-box h2 {
+  color: #00BFFF;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-box p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.nav-links span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links span:hover {
+  color: white;
+}
+/* Navbar */
+.navbar {
+  background-color: #00BFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links span {
+  color: #FFD700;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links span:hover {
+  color: white;
+}
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #00BFFF;
+  color: #FFD700;
+  text-align: center;
+  font-weight: bold;
+}
+.navbar {
+  background-color: #00BFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-text {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-center {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-center span {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-center span:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: #f0f8ff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
