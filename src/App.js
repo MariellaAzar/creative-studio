@@ -159,6 +159,8 @@ function ContactPage() {
         <h2>Contact Us</h2>
         <p>📞 Phone: (555) 123-4567</p>
         <p>📧 Email: info@creativestudio.fake</p>
+        <p>📍 We are located at 140 Boulevard Jaune</p>
+        
         <div style={{ marginTop: '2rem' }}>
           <img
             src="./src/assets/map.png"
