@@ -44,6 +44,14 @@ function Home() {
           Book Now.
         </button>
       </header>
+      <section className="about-section">
+        <h2>About Us</h2>
+        <p>
+          We are a creative studio offering engaging and inspiring art courses for all age ranges.
+          Whether you're discovering a new passion or refining your skills, we provide hands-on guidance
+          in painting, sculpture, fashion design, pottery, and textile art. Join a community where creativity flows freely! 🎨
+        </p>
+      </section>
       <Footer />
     </div>
   );
@@ -85,7 +93,7 @@ const navigate = useNavigate();
           <select name="course" value={form.course} onChange={handleChange} required>
             <option value="">Choose a course</option>
             <option value="Design Mode + Conception">Design Mode + Conception</option>
-            <option value="Peinture">Peinture</option>
+            <option value="Painting">Painting</option>
             <option value="Sculpture">Sculpture</option>
           </select>
 
